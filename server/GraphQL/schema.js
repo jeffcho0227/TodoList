@@ -39,9 +39,35 @@ const RootQuery = new GraphQLObjectType({
         }
     }
 });
+
+const Mutation = new GraphQLObjectType({
+  name: 'Mutation',
+  fields: {
+      addList: {
+          type: ListType,
+          args: {
+              //GraphQLNonNull make these field required
+              Title: { type: new GraphQLNonNull(GraphQLString) },
+              Location: { type: new GraphQLNonNull(GraphQLString) }, 
+              TimeInterval: { type: new GraphQLNonNull(GraphQLString) }, 
+              Note: { type: new GraphQLNonNull(GraphQLString) }
+          },
+          resolve(parent, args) {
+              let List = new todoModel({
+                  Title: args.Title,
+                  Location: args.Location,
+                  TimeInterval: args.TimeInterval,
+                  Note: args.Note
+              });
+              return List.save();
+          }
+      }
+  }
+});
  
 //Creating a new GraphQL Schema, with options query which defines query 
 //we will allow users to use when they are making request.
 module.exports = new GraphQLSchema({
-    query: RootQuery
+    query: RootQuery,
+    mutation: Mutation
 });

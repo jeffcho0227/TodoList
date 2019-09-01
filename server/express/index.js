@@ -3,7 +3,7 @@ const parser = require('body-parser');
 const path = require('path');
 const graphqlHTTP = require('express-graphql');
 
-const schema = require('../apolloServer/schema.js')
+const schema = require('../GraphQL/schema.js')
 
 const app = express();
 const port = 3000;
