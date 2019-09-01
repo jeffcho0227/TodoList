@@ -1,0 +1,54 @@
+{
+  "name": "TodoList",
+  "version": "1.0.0",
+  "description": "create a to list with React, GraphQL, Apollo-server and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w ./client/src/index.jsx",
+    "start": "nodemon ./server/express/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffcho0227/TodoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffcho0227/TodoList/issues"
+  },
+  "homepage": "https://github.com/jeffcho0227/TodoList#readme",
+  "dependencies": {
+    "@apollo/react-hooks": "^3.0.1",
+    "apollo-boost": "^0.4.4",
+    "apollo-server": "^2.9.2",
+    "apollo-server-express": "^2.9.2",
+    "axios": "^0.18.1",
+    "body-parser": "^1.18.3",
+    "file-loader": "^4.2.0",
+    "graphql": "^14.5.4",
+    "graphql-tag": "^2.10.1",
+    "mongoose": "^5.5.2",
+    "node-sass": "^4.12.0",
+    "nodemailer": "^6.3.0",
+    "nodemon": "^1.19.1",
+    "react": "^16.9.0",
+    "react-apollo": "^3.0.1",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "sass-loader": "^8.0.0",
+    "webpack-combine-loaders": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "image-webpack-loader": "^5.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
