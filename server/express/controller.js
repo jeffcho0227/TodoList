@@ -1,3 +1,6 @@
+/*
+(not needed if using graphql)
+
 const dbHelper = require('../../database/helperFunc.js');
 
 module.exports = {
@@ -7,5 +10,10 @@ module.exports = {
         res.status(200).send(data)
       })
       .catch(err => res.statas(404).send(err));
-  }
+  },
+
+
+
 };
+
+*/

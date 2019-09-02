@@ -31,7 +31,7 @@ const ListType = new GraphQLObjectType({
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
     fields: {
-        List: {
+        list: {
           type: new GraphQLList(ListType), 
           resolve(parent, arg) {
             return todoModel.find({});

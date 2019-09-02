@@ -1,3 +1,6 @@
+/*
+(not needed if using graphql)
+
 const model = require('./index.js');
 
 const findAllHelper = () => {
@@ -22,3 +25,5 @@ module.exports = {
   addToDo,
   deleteToDo
 }
+
+*/
