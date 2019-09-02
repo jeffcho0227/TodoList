@@ -2,22 +2,13 @@ import React from 'react';
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
 import Item from './Item.jsx';
+import * as queries from '../../../server/GraphQL/queries.js';
 
-export const getWholeList = gql`
-  query {
-    list {
-      Title
-      Location
-      TimeInterval
-      Note
-      id
-    }
-  }
-`;
 
 const List = () => {
-  const { loading, error, data } = useQuery(getWholeList);
-
+  console.log(queries, 'here');
+  const { loading, error, data } = useQuery(queries.getWholeList);
+  
   if (loading) return 'Loading!!';
   if (error) return `Error!! ${error}`;
 

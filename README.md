@@ -1,2 +1,2 @@
 # TodoList
-create a to list with React, GraphQL, Apollo-server and MongoDB
+create a to list with React(React hooks), GraphQL, Apollo-server and MongoDB
